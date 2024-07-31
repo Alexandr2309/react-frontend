@@ -2,6 +2,7 @@
   "name": "@frontend/shared",
   "version": "1.0.0",
   "exports": {
+    "./const": "./src/const/index.ts",
     "./types": "./src/types/index.ts",
     "./storage": "./src/utils/storage/index.ts",
     "./miscUtils": "./src/utils/miscellaneous/index.ts"

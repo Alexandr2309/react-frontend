@@ -1,25 +1,16 @@
+import { AppLoader } from '@frontend/ui-kit/appLoader';
 import { Suspense } from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
-import { MainPage } from '@/pages/main';
-import { AboutPage } from '@/pages/about';
+import { Link } from 'react-router-dom';
+import { AppRouter } from './providers/router';
 
 export const App = () => (
-    <Suspense fallback={<div>...Loading</div>}>
+    <Suspense fallback={<AppLoader/>}>
         <Link to={'/'}>
             Main page
         </Link>
         <Link to={'/about'}>
             About page
         </Link>
-        <Routes>
-            <Route
-                path={'/'}
-                element={<MainPage/>}
-            />
-            <Route
-                path={'/about'}
-                element={<AboutPage/>}
-            />
-        </Routes>
+        <AppRouter/>
     </Suspense>
 );
