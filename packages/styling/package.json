@@ -1,0 +1,15 @@
+{
+  "name": "@frontend/styling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx stylelint \"**/*.scss\""
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "stylelint-config-frontend": "*"
+  }
+}

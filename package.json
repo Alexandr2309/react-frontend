@@ -1,8 +1,7 @@
 {
   "name": "react-frontend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "lint": "turbo run lint",
     "clean": "turbo daemon clean",
@@ -12,18 +11,16 @@
     "build:icons": "turbo run build --filter=icons --force",
     "dev": "turbo run dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "clsx": "2.1.1",
-    "eslint": "9.7.0",
-    "eslint-config": "*",
+    "eslint": "8.57.0",
+    "eslint-config-frontend": "*",
     "turbo": "2.0.6",
     "vite-plugin-svgr": "4.2.0"
   },
   "workspaces": [
     "/apps/*",
     "packages/*"
-  ]
+  ],
+  "packageManager": "npm@9.6.7"
 }
