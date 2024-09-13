@@ -1,0 +1,65 @@
+.container {
+    position: relative;
+}
+
+.title {
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $font-family-main, sans-serif;
+  font-size: 4em;
+  font-weight: 400;
+  line-height: 120%;
+  width: px;
+  text-align: center;
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--royal-blue);
+  z-index: 1;
+}
+
+.top {
+ height: 50vh;
+ border-bottom: 1px solid var(--greyed-out);
+ background-color: var(--pink);
+}
+
+.bottom {
+  height: 80vh;
+  background-color: var(--yellow);
+}
+
+.first {
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  width: 266px;
+  height: 354px;
+  top: 100px;
+  right: 200px;
+    mask-image: radial-gradient(white, black);
+}
+
+.second {
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg) translateY(-50%);
+  transform-style: preserve-3d;
+  width: 28em;
+  height: 35em;
+  top: 50vh;
+  left: 100px;
+    mask-image: radial-gradient(white, black);
+}
+
+.center {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg) translate(-50%, -40%);
+  transform-style: preserve-3d;
+  width: 36em;
+  height: 56em;
+  border-radius: 100vw;
+  top: 50vh;
+  left: 50%;
+  mask-image: radial-gradient(white, black);
+}

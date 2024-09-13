@@ -1,0 +1,25 @@
+@use './reset' as *;
+@use './font' as *;
+
+:root {
+  --black: black;
+  --royal-blue: #035dff;
+  --white: white;
+  --pink: #ffb4ce;
+  --yellow: #fff460;
+  --tomato: #ff6541;
+  --greyed-out: rgb(0 0 0 / 24%);
+  --pale-turquoise: #9ef3f3;
+  --magenta: #ff59ff;
+}
+
+
+body {
+  font-family: $font-family-main;
+}
+
+.layout {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}

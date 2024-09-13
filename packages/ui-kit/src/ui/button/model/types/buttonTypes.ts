@@ -5,6 +5,7 @@ import { ButtonHTMLAttributes, CSSProperties } from 'react';
 export enum ButtonVariant {
     PRIMARY = 'primary',
     SECONDARY = 'secondary',
+    GHOST = 'ghost',
 }
 
 export enum ButtonSize {

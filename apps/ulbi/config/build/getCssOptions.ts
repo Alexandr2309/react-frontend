@@ -7,4 +7,9 @@ export const getCssOptions = (): CSSOptions => ({
             autoprefixer({}),
         ],
     },
+    preprocessorOptions: {
+        scss: {
+            additionalData: '@use "@/app/styles/font" as * ;\n',
+        },
+    },
 });

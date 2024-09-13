@@ -1,0 +1,19 @@
+@import '@frontend/styles/lib';
+
+.icon-wrapper {
+  --col-gap: 8px;
+
+  @include flex-row-center(var(--col-gap));
+
+  &--center {
+    justify-content: center;
+  }
+
+  &_align--right {
+    flex-direction: row-reverse;
+  }
+
+  &_gap--s {
+    column-gap: 4px;
+  }
+}
